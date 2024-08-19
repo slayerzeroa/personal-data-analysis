@@ -38,6 +38,3 @@ def get_blog_rank():
         blog_list.append(bs(blog.get_attribute('outerHTML'), 'html.parser').find('a')['href'])
 
     return(list(set(blog_list)))
-
-
-print(get_blog_rank())

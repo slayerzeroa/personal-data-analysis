@@ -2,8 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 from env_utils import user_data
 
-
-
 def keyzard_get_keyword():
     keyzard_id, keyzard_password = user_data('C:\\Users\\slaye\\PycharmProjects\\personal-data-analysis\\blog\\env\\keyzard_user.txt')
 
@@ -33,5 +31,3 @@ def keyzard_get_keyword():
         result_list.append(td.text)
 
     return result_list
-
-print(keyzard_get_keyword())
